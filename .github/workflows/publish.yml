@@ -1,0 +1,44 @@
+name: Publish
+
+on:
+  push:
+    tags: [ v* ]
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+
+  publish:
+
+    strategy:
+      matrix:
+        buildconfig: [ Release ]
+
+    runs-on: windows-latest
+
+    env:
+      project: src\GenesysCloudOAuthWebView\GenesysCloudOAuthWebView.csproj
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Install nbgv
+      uses: dotnet/nbgv@v0.4.0
+
+    - name: Build
+      run: dotnet build $env:project -c $env:config
+      env:
+        config: ${{ matrix.buildconfig }}
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: GenesysCloudOAuthWebView nupkg
+        path: '**\*.nupkg'
+
+    - name: Publish to NuGet
+      if: matrix.buildconfig == 'Release' && github.event_name == 'push'
+      run: dotnet nuget push **\*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}} --skip-duplicate

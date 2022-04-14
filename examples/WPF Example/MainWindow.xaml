@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oauth="clr-namespace:GenesysCloudOAuthWebView.Wpf;assembly=GenesysCloudOAuthWebView.Wpf"
+        Name="TheWindow"
+        Title="OAuth Example" Height="700" Width="760">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="3" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="3" />
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="85" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="140" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0">Client ID:</Label>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding ElementName=TheWindow, Path=ClientId, UpdateSourceTrigger=PropertyChanged}" />
+            <Button Grid.Row="0" Grid.Column="2" Click="StartImplicitGrant_Click">Start Implicit Grant</Button>
+
+            <Label Grid.Row="1" Grid.Column="0">Token:</Label>
+            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" IsReadOnly="True" Text="{Binding ElementName=TheWindow, Path=AuthToken}" />
+
+        </Grid>
+
+        <oauth:OAuthWebView x:Name="AuthBrowser" />
+    </DockPanel>
+</Window>
