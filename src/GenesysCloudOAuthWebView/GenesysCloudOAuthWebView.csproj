@@ -9,11 +9,11 @@
 		<Description>A .NET control to handle OAuth flows with Genesys Cloud using Edge WebView2</Description>
 		<PackageIcon>genesys.png</PackageIcon>
 		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/dremin/GenesysCloudOAuthWebView</RepositoryUrl>
+		<RepositoryUrl>https://github.com/MyPureCloud/oauth-webview-dotnet</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/dremin/GenesysCloudOAuthWebView</PackageProjectUrl>
-		<Authors>Genesys</Authors>
-		<Copyright>Genesys</Copyright>
+		<PackageProjectUrl>https://github.com/MyPureCloud/oauth-webview-dotnet</PackageProjectUrl>
+		<Authors>Genesys Developer Evangelists</Authors>
+		<Copyright>Copyright © Genesys 2022</Copyright>
 		<PackageTags>genesys purecloud pure cloud platform api sdk oauth control webview2</PackageTags>
 	</PropertyGroup>
 
