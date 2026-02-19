@@ -41,7 +41,7 @@ namespace GenesysCloudOAuthWebView.WinForms
                     throw new OAuthSettingsValidationException("Org must be set if Provider is set");
 
                 // Navigate the browser (can't do this after ShowDialog has been called)
-                oAuthWebView.BeginImplicitGrant();
+                oAuthWebView.BeginOAuthGrant();
 
                 // Open window
                 if (dialog)
@@ -55,7 +55,7 @@ namespace GenesysCloudOAuthWebView.WinForms
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                throw ex;
+                throw;
             }
         }
 

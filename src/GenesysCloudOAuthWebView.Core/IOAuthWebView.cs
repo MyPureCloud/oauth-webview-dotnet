@@ -27,8 +27,8 @@ namespace GenesysCloudOAuthWebView.Core
         event AuthenticatedDelegate Authenticated;
 
         /// <summary>
-        /// Initiates the Implicit Grant OAuth flow
+        /// Initiates the OAuth Grant flow (PKCE or Implicit)
         /// </summary>
-        void BeginImplicitGrant();
+        void BeginOAuthGrant();
     }
 }

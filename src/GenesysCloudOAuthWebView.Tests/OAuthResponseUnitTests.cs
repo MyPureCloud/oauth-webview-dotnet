@@ -10,6 +10,7 @@ namespace GenesysCloudOAuthWebView.Tests
             return new OAuthConfig
             {
                 Environment = "usw2.pure.cloud",
+                IsPKCEGrant = false,
                 ClientId = "00000000-0000-0000-0000-000000000000",
                 RedirectUri = "http://localhost"
             };

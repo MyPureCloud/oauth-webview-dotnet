@@ -12,6 +12,7 @@ namespace WinFormsExample
 
             oAuthWebBrowser1.Config = new OAuthConfig
             {
+                Environment = "mypurecloud.com",
                 RedirectUri = "http://invaliduri/",
                 RedirectUriIsFake = true
             };

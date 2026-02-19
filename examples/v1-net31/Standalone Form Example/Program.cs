@@ -19,6 +19,7 @@ namespace Standalone_Form_Example
                 // Set settings
                 form.oAuthWebView.Config = new GenesysCloudOAuthWebView.Core.OAuthConfig
                 {
+                    Environment = "mypurecloud.com",
                     ClientId = "babbc081-0761-4f16-8f56-071aa402ebcb",
                     RedirectUri = "http://localhost:8080",
                     RedirectUriIsFake = true

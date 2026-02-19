@@ -2,7 +2,7 @@
   "author": "Genesys Developer Evangelists",
   "title": ".NET OAuth WebView2 Control",
   "info_url": "https://github.com/MyPureCloud/oauth-webview-dotnet",
-  "logo_url": "https://developer-content.genesys.cloud/images/genesys-icon.svg",
+  "logo_url": "https://yeticms-api.genesys.cloud/assets/gc-dev-center/images/genesys-icon.svg",
   "categories": [
     "extensions"
   ],

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<RootNamespace>WPFExampleV2Net8</RootNamespace>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView.Core\GenesysCloudOAuthWebView.Core.csproj" />
+		<ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView.WinForms\GenesysCloudOAuthWebView.WinForms.csproj" />
+		<ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView.Wpf\GenesysCloudOAuthWebView.Wpf.csproj" />
+		<ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView\GenesysCloudOAuthWebView.csproj" />
+	</ItemGroup>
+
+</Project>

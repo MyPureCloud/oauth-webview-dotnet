@@ -45,6 +45,7 @@ namespace WPFExample
             // Set up browser
             AuthBrowser.Config = new OAuthConfig
             {
+                Environment = "mypurecloud.com",
                 RedirectUri = "http://invaliduri/",
                 RedirectUriIsFake = true
             };

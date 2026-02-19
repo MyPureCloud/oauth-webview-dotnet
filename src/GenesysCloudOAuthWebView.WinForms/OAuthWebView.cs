@@ -1,7 +1,7 @@
-﻿using GenesysCloudOAuthWebView.Core;
+﻿using System;
+using GenesysCloudOAuthWebView.Core;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.WinForms;
-using System;
 
 namespace GenesysCloudOAuthWebView.WinForms
 {
@@ -26,6 +26,11 @@ namespace GenesysCloudOAuthWebView.WinForms
         }
 
         #region Private methods
+        private bool ShouldSerializeConfig()
+        {
+            if (Config != null) return true;
+            else return false;
+        }
 
         private void OAuthWebView_NavigationStarting(object sender, CoreWebView2NavigationStartingEventArgs e)
         {
@@ -71,7 +76,7 @@ namespace GenesysCloudOAuthWebView.WinForms
 
         #region Public methods
 
-        public void BeginImplicitGrant()
+        public void BeginOAuthGrant()
         {
             // Clear existing token
             AccessToken = "";

@@ -11,6 +11,7 @@ namespace GenesysCloudOAuthWebView.Tests
             OAuthConfig config = new OAuthConfig
             {
                 Environment = "usw2.pure.cloud",
+                IsPKCEGrant = false,
                 ClientId = "00000000-0000-0000-0000-000000000000",
                 RedirectUri = "http://localhost"
             };
@@ -24,6 +25,7 @@ namespace GenesysCloudOAuthWebView.Tests
             OAuthConfig config = new OAuthConfig
             {
                 Environment = "usw2.pure.cloud",
+                IsPKCEGrant = false,
                 ClientId = "00000000-0000-0000-0000-000000000000",
                 RedirectUri = "http://localhost",
                 Org = "OrgName",
@@ -39,6 +41,7 @@ namespace GenesysCloudOAuthWebView.Tests
             OAuthConfig config = new OAuthConfig
             {
                 Environment = "usw2.pure.cloud",
+                IsPKCEGrant = false,
                 ClientId = "00000000-0000-0000-0000-000000000000",
                 RedirectUri = "http://localhost",
                 Provider = "adfs"
@@ -53,6 +56,7 @@ namespace GenesysCloudOAuthWebView.Tests
             OAuthConfig config = new OAuthConfig
             {
                 Environment = "usw2.pure.cloud",
+                IsPKCEGrant = false,
                 ClientId = "00000000-0000-0000-0000-000000000000",
                 RedirectUri = "http://localhost",
                 Org = "OrgName"
@@ -67,6 +71,7 @@ namespace GenesysCloudOAuthWebView.Tests
             OAuthConfig config = new OAuthConfig
             {
                 Environment = "usw2.pure.cloud",
+                IsPKCEGrant = false,
                 ClientId = "00000000-0000-0000-0000-000000000000",
                 RedirectUri = "http://localhost",
                 State = "TestState"
@@ -81,6 +86,7 @@ namespace GenesysCloudOAuthWebView.Tests
             OAuthConfig config = new OAuthConfig
             {
                 Environment = "usw2.pure.cloud",
+                IsPKCEGrant = false,
                 ClientId = "00000000-0000-0000-0000-000000000000",
                 RedirectUri = "http://localhost",
                 ForceLoginPrompt = true
