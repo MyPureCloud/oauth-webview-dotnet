@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>StandaloneFormExampleV2Net472</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView.Core\GenesysCloudOAuthWebView.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView.WinForms\GenesysCloudOAuthWebView.WinForms.csproj" />
+    <ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView.Wpf\GenesysCloudOAuthWebView.Wpf.csproj" />
+    <ProjectReference Include="..\..\..\src\GenesysCloudOAuthWebView\GenesysCloudOAuthWebView.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,8 +1,8 @@
-﻿using GenesysCloudOAuthWebView.Core;
+﻿using System;
+using System.Windows;
+using GenesysCloudOAuthWebView.Core;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.Wpf;
-using System;
-using System.Windows;
 
 namespace GenesysCloudOAuthWebView.Wpf
 {
@@ -72,7 +72,7 @@ namespace GenesysCloudOAuthWebView.Wpf
 
         #region Public methods
 
-        public void BeginImplicitGrant()
+        public void BeginOAuthGrant()
         {
             // Clear existing token
             AccessToken = "";

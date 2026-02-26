@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netcoreapp3.1;net472</TargetFrameworks>
+		<TargetFrameworks>netcoreapp3.1;net472;net8.0-windows;net10.0-windows</TargetFrameworks>
 		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>GenesysCloudOAuthWebView</PackageId>
@@ -13,12 +13,12 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/MyPureCloud/oauth-webview-dotnet</PackageProjectUrl>
 		<Authors>Genesys Developer Evangelists</Authors>
-		<Copyright>Copyright © Genesys 2022</Copyright>
-		<PackageTags>genesys purecloud pure cloud platform api sdk oauth control webview2</PackageTags>
+		<Copyright>Copyright © Genesys 2026</Copyright>
+		<PackageTags>genesys cloud platform api sdk oauth control webview2</PackageTags>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1185.39" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3719.77" />
 	</ItemGroup>
 
 	<ItemGroup>
