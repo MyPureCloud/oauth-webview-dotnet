@@ -6,7 +6,7 @@ This is a library that provides a simple way to execute a Genesys Cloud OAuth 2 
 
 This library is intended as a modern replacement for the MSHTML-based [PureCloudOAuthControl](https://github.com/MyPureCloud/purecloud_api_dotnet_oauth_control).
 
-# New version - v2.0-alpha (02/20/2026) - BREAKING CHANGES
+# New version - v2.0 (02/20/2026) - BREAKING CHANGES
 
 **The new version (v2) of the OAuth WebView component introduces some breaking changes and additions:**
 - The component now **supports PKCE Grant Flow and Implicit Grant Flow** (controlled using the config's `IsPKCEGrant` property). **PKCE Grant Flow is set as the default OAuth Grant Flow**.
